@@ -1,0 +1,186 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+@font-face {
+    font-family: 'Boska';
+    src: url('../fonts/Boska-Variable.ttf');
+    font-weight: 350;
+}
+
+@font-face {
+    font-family: 'Boska';
+    src: url('../fonts/Boska-VariableItalic.ttf');
+    font-weight: 350;
+    font-style: italic;
+}
+
+@keyframes cycleCards {
+    0% {
+        opacity: 0;
+        z-index: 1;
+    }
+    100% {
+        opacity: 1;
+        z-index: 2;
+    }
+}
+body {
+    font-family: 'Boska';
+    background-color: #ccc;
+    padding: 5%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Boska';
+}
+
+.main{
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5vh;
+    width: 74%;
+    height: fit-content;
+}
+
+section{
+    align-self: stretch;
+    scroll-margin-top: 2vh;
+    border: 3px solid black;
+    border-radius: 30px;
+    background-color: white;
+    box-shadow: 0 4px 8px darkslategrey;
+    padding-top: 6%;
+    padding-bottom: 6%;
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5vh;
+    padding: 4%;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+}
+
+.description {
+    width: 100%;
+}
+
+.project-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 2em;
+}
+
+.project-card {
+    border: 1px solid black;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px lightseagreen;
+    text-align: center;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.project-card:hover {
+    box-shadow: 0 4px 8px lightseagreen;
+}
+
+.project-link{
+    text-decoration: none;
+    color: inherit;
+}
+
+.project-title{
+    font-size: large;
+}
+
+.project-description{
+    font-size: small;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.education-list {
+    list-style-type: none;
+    font-size: small;
+}
+
+.rolling-button {
+    background-color: grey;
+    border-radius: 5px;
+    color: white;
+    padding: 1% 2%;
+    text-align: left;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    width: 16px;
+    column-gap: 6px;
+    justify-content: space-between;
+    transition: all 0.2s ease-in-out;
+}
+
+.rolling-button span {
+    display: none;
+}
+
+.rolling-button:hover {
+    width: 70%;
+    background-color: lightseagreen;
+    transition: width 2s ease;
+}
+
+.rolling-button:hover span {
+    display: flex;
+    width: fill;
+}
+
+.side-list {
+    padding: 3px;
+    list-style-type: none;
+    vertical-align: middle;
+}
+
+.sidebar{
+    border: 3px solid black;
+    border-radius: 3%;
+    padding: 2%;
+    background-color: #fff;
+    float: left;
+    box-shadow: 0 4px 8px lightseagreen;
+}
+
+.sidebar{
+    width: 16%;
+    height: fit-content;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 5%;
+}
+
+.contact{
+    font-size:medium;
+    padding-top: 100px;
+}
