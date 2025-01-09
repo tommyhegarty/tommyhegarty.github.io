@@ -27,7 +27,7 @@
 }
 body {
     font-family: 'Boska';
-    background-color: #ccc;
+    background-color: skyblue;
     padding: 5%;
 }
 
@@ -92,7 +92,7 @@ section{
 .project-card {
     border: 1px solid black;
     border-radius: 8px;
-    box-shadow: 0 2px 4px lightseagreen;
+    box-shadow: 0 4px 8px skyblue;
     text-align: center;
     padding: 8px;
     display: flex;
@@ -102,7 +102,7 @@ section{
 }
 
 .project-card:hover {
-    box-shadow: 0 4px 8px lightseagreen;
+    box-shadow: 0 8px 16px skyblue;
 }
 
 .project-link{
@@ -127,6 +127,11 @@ section{
     font-size: small;
 }
 
+.smaller-italic {
+    font-style: italic;
+    font-size: smaller;
+}
+
 .rolling-button {
     background-color: grey;
     border-radius: 5px;
@@ -148,7 +153,7 @@ section{
 
 .rolling-button:hover {
     width: 70%;
-    background-color: lightseagreen;
+    background-color: skyblue;
     transition: width 2s ease;
 }
 
@@ -163,21 +168,33 @@ section{
     vertical-align: middle;
 }
 
-.sidebar{
-    border: 3px solid black;
-    border-radius: 3%;
-    padding: 2%;
-    background-color: #fff;
-    float: left;
-    box-shadow: 0 4px 8px lightseagreen;
+.reading-list {
+    padding: 5px;
+    list-style-type: none;
+    vertical-align: middle;
+    font-size: small;
 }
 
-.sidebar{
-    width: 16%;
+.sidebar-wrapper{
+    width: 20%;
     height: fit-content;
     position: sticky;
     position: -webkit-sticky;
     top: 5%;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5vh;
+    height: fit-content;
+}
+
+.sidebar{
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 10%;
+    background-color: #fff;
+    float: left;
+    box-shadow: 0 4px 8px darkslategrey;
 }
 
 .contact{
