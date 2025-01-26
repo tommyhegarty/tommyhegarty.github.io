@@ -1,6 +1,7 @@
 *{
     padding: 0;
     margin: 0;
+    content: "text/html; charset=UTF-8";
 }
 @font-face {
     font-family: 'Boska';
@@ -29,6 +30,7 @@ body {
     font-family: 'Boska';
     background-color: skyblue;
     padding: 5%;
+    content: en;
 }
 
 html {
@@ -173,6 +175,7 @@ section{
     list-style-type: none;
     vertical-align: middle;
     font-size: small;
+    content: "text/html; charset=UTF-8";
 }
 
 .sidebar-wrapper{
