@@ -26,6 +26,7 @@
         z-index: 2;
     }
 }
+
 body {
     font-family: 'Boska';
     background-color: skyblue;
@@ -138,6 +139,16 @@ section{
     font-size: smaller;
 }
 
+.link-list{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.permanent-button span {
+    display: flex;
+    width: fill;
+}
+
 .rolling-button {
     background-color: grey;
     border-radius: 5px;
@@ -145,27 +156,25 @@ section{
     padding: 1% 2%;
     text-align: left;
     text-decoration: none;
+    width: 65%;
     display: flex;
     align-items: center;
-    width: 16px;
     column-gap: 6px;
     justify-content: space-between;
     transition: all 0.2s ease-in-out;
 }
 
 .rolling-button span {
-    display: none;
+    display: flex;
+    width: fill;
 }
 
 .rolling-button:hover {
-    width: 70%;
+    width: 90%;
     background-color: skyblue;
     transition: width 2s ease;
-}
-
-.rolling-button:hover span {
-    display: flex;
-    width: fill;
+    border: 1px solid black;
+    box-shadow: 0 2px 4px grey;
 }
 
 .side-list {
@@ -179,7 +188,6 @@ section{
     list-style-type: none;
     vertical-align: middle;
     font-size: small;
-    content: "text/html; charset=UTF-8";
 }
 
 .sidebar-wrapper{
@@ -206,5 +214,4 @@ section{
 
 .contact{
     font-size:medium;
-    padding-top: 100px;
 }
